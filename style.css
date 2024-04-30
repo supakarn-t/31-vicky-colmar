@@ -87,6 +87,7 @@ header {
 
 		.logo-text {
 			letter-spacing: 1px;
+			color: var(--dimgray);
 
 			&.text1 {
 				font-weight: bold;
@@ -234,10 +235,6 @@ header {
 				border-top: none;
 			}
 
-			&#info-article3 {
-				padding-bottom: 32px;
-			}
-
 			picture {
 				width: 35%;
 				padding-right: 16px;
@@ -288,6 +285,10 @@ header {
 
 			article {
 				border: none;
+
+				&#info-article1 {
+					padding-top: 16px;
+				}
 
 				picture {
 					width: 50%;
