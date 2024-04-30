@@ -15,6 +15,7 @@
 	--gray: rgb(121, 121, 121);
 	--dimgray: rgb(74, 74, 74);
 	--blue: rgb(74, 144, 226);
+	--darkblue: rgb(45, 83, 129);
 }
 
 body {
@@ -102,26 +103,22 @@ header {
 	@media (max-width: 480px) {
 		padding: 0px;
 
-		.logo {
-			width: 100%;
-
-			.logo-img {
-				justify-content: space-around;
-				width: 100%;
-
-				.icon {
-					height: 32px;
-				}
-			}
-
-			.logo-text {
-				display: none;
-			}
+		.logo,
+		.desktop-nav {
+			display: none;
 		}
 
-		.nav-bar {
-			display: none;
-			/* gap: 0px; */
+		.mobile-nav {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+
+			.icon {
+				display: flex;
+				align-items: center;
+				width: 32px;
+			}
 		}
 	}
 }
@@ -149,16 +146,21 @@ header {
 			color: var(--dimgray);
 		}
 
-		button {
+		.button {
 			padding: 8px;
 			background-color: var(--dimgray);
 			color: white;
 			border: 0px;
-			font-size: 16px;
+			text-align: center;
+			font-weight: normal;
 
 			&:hover {
 				background-color: var(--darkgray);
 				transition: all 0.3s ease;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
 			}
 		}
 	}
@@ -195,7 +197,7 @@ header {
 		padding: 32px 24px;
 		gap: 24px;
 
-		figure {
+		picture {
 			margin-bottom: 8px;
 		}
 	}
@@ -216,7 +218,7 @@ header {
 				border-top: none;
 			}
 
-			figure {
+			picture {
 				width: 35%;
 				padding: 16px;
 			}
@@ -229,12 +231,25 @@ header {
 
 				a {
 					color: var(--blue);
+
+					&:hover {
+						color: var(--darkblue);
+						transition: all 0.3s ease;
+						-webkit-transition: all 0.3s ease;
+						-moz-transition: all 0.3s ease;
+						-ms-transition: all 0.3s ease;
+						-o-transition: all 0.3s ease;
+					}
 				}
 			}
 
 			&:hover {
 				background-color: var(--lightgray);
 				transition: all 0.3s ease;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
 			}
 		}
 	}
@@ -257,7 +272,7 @@ header {
 				padding: 16px 16px 32px;
 				border: none;
 
-				figure {
+				picture {
 					padding: 0px;
 					width: 100%;
 				}
@@ -292,7 +307,7 @@ header {
 			background-color: white;
 
 			&:hover {
-				box-shadow: 0px 0px 10px 5px var(--lightgray);
+				box-shadow: 0px 0px 10px 1px var(--gray);
 				transition: all 0.3s ease;
 				-webkit-transition: all 0.3s ease;
 				-moz-transition: all 0.3s ease;
@@ -305,10 +320,6 @@ header {
 				flex-direction: column;
 				gap: 8px;
 				padding: 16px 16px 24px;
-
-				p {
-					color: var(--gray);
-				}
 			}
 		}
 	}
@@ -340,7 +351,7 @@ header {
 					-o-transition: all 0.3s ease;
 				}
 
-				figure,
+				picture,
 				p {
 					display: none;
 				}
@@ -384,9 +395,13 @@ header {
 				&:hover {
 					background-color: var(--lightgray);
 					transition: all 0.3s ease;
+					-webkit-transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease;
+					-ms-transition: all 0.3s ease;
+					-o-transition: all 0.3s ease;
 				}
 
-				figure {
+				picture {
 					width: 35%;
 					padding: 16px;
 				}
@@ -432,6 +447,14 @@ footer {
 	div {
 		display: flex;
 		gap: 16px;
+
+		a {
+			color: var(--gray);
+
+			&:hover {
+				color: var(--dimgray);
+			}
+		}
 	}
 
 	@media (max-width: 480px) {

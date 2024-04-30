@@ -15,31 +15,18 @@
 	<body>
 		<header>
 			<a href="#" class="logo">
-				<div class="logo-img">
-					<img src="assets/images/ic-logo.svg" alt="Logo icon" class="icon" />
-
+				<picture class="logo-img">
 					<img
-						src="assets/images/ic-on-campus.svg"
-						alt="On campus icon"
-						class="icon mobile"
+						src="assets/images/ic-logo.svg"
+						alt="Logo icon"
+						class="desktop"
 					/>
-
-					<img
-						src="assets/images/ic-online.svg"
-						alt="Online icon"
-						class="icon mobile"
-					/>
-
-					<img
-						src="assets/images/ic-login.svg"
-						alt="Log in icon"
-						class="icon mobile"
-					/>
-				</div>
+				</picture>
 				<p class="logo-text text1">COLMAR</p>
 				<p class="logo-text text2">ACADEMY</p>
 			</a>
-			<nav>
+
+			<nav class="desktop-nav">
 				<ul class="nav-bar">
 					<li><a href="#">On campus</a></li>
 					<li><a href="#">Online</a></li>
@@ -47,29 +34,45 @@
 					<li><a href="#">Sign in</a></li>
 				</ul>
 			</nav>
+
+			<nav class="mobile mobile-nav">
+				<a href="#" class="icon">
+					<img src="assets/images/ic-logo.svg" alt="Logo icon" />
+				</a>
+				<a href="#" class="icon">
+					<img src="assets/images/ic-on-campus.svg" alt="On campus icon" />
+				</a>
+				<a href="#" class="icon">
+					<img src="assets/images/ic-online.svg" alt="Online icon" />
+				</a>
+				<a href="#" class="icon">
+					<img src="assets/images/ic-login.svg" alt="Log in icon" />
+				</a>
+			</nav>
 		</header>
 
 		<main>
 			<section class="hero">
-				<figure class="hero-first">
+				<picture class="hero-first">
 					<img src="assets/images/banner.jpg" alt="Banner" />
-				</figure>
+				</picture>
 
 				<article class="hero-second">
 					<h2>Learn something new everyday</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					<button type="button">Start here</button>
+
+					<a class="button">Start here</a>
 				</article>
 			</section>
 
 			<section class="information">
 				<article class="info-main">
-					<figure>
+					<picture>
 						<img
 							src="assets/images/information-main.jpg"
 							alt="Information Main"
 						/>
-					</figure>
+					</picture>
 					<h2>It doesn't hurt to keep practicing</h2>
 					<p>
 						"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
@@ -82,7 +85,7 @@
 
 				<div class="info-side">
 					<article id="info-article1">
-						<figure>
+						<picture>
 							<img
 								src="assets/images/information-orientation.jpg"
 								alt="Orientation date"
@@ -93,15 +96,16 @@
 								alt="Orientation date"
 								class="mobile"
 							/>
-						</figure>
+						</picture>
 						<div class="info-side-content">
 							<h3>Orientation date</h3>
 							<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
 							<a href="#">Read more</a>
 						</div>
 					</article>
+
 					<article id="info-article2">
-						<figure>
+						<picture>
 							<img
 								src="assets/images/information-campus.jpg"
 								alt="Campus"
@@ -112,15 +116,16 @@
 								alt="Campus"
 								class="mobile"
 							/>
-						</figure>
+						</picture>
 						<div class="info-side-content">
 							<h3>Our campus</h3>
 							<p>Find which campus is close by you</p>
 							<a href="#">Read more</a>
 						</div>
 					</article>
+
 					<article id="info-article3">
-						<figure>
+						<picture>
 							<img
 								src="assets/images/information-guest-lecture.jpg"
 								alt="Guest Lecture"
@@ -131,7 +136,7 @@
 								alt="Guest Lecture"
 								class="mobile"
 							/>
-						</figure>
+						</picture>
 						<div class="info-side-content">
 							<h3>Our guest lecture</h3>
 							<p>
@@ -148,25 +153,26 @@
 
 				<div class="course-all">
 					<article>
-						<figure>
+						<picture>
 							<img
 								src="assets/images/course-software.jpg"
 								alt="Software engineering course"
 							/>
-						</figure>
+						</picture>
 						<div class="course-content">
 							<h3>Software engineering</h3>
 							<p>COURSES</p>
 							<p>Web Development, Mobile Development, iOT, APIs</p>
 						</div>
 					</article>
+
 					<article>
-						<figure>
+						<picture>
 							<img
 								src="assets/images/course-computer-art.jpg"
 								alt="Computer art course"
 							/>
-						</figure>
+						</picture>
 						<div class="course-content">
 							<h3>Computer art</h3>
 							<p>COURSES</p>
@@ -176,46 +182,50 @@
 							</p>
 						</div>
 					</article>
+
 					<article>
-						<figure>
+						<picture>
 							<img src="assets/images/course-design.jpg" alt="Design course" />
-						</figure>
+						</picture>
 						<div class="course-content">
 							<h3>Design</h3>
 							<p>COURSES</p>
 							<p>User Experience Design, User Research, Visual Design</p>
 						</div>
 					</article>
+
 					<article>
-						<figure>
+						<picture>
 							<img src="assets/images/course-data.jpg" alt="Data course" />
-						</figure>
+						</picture>
 						<div class="course-content">
 							<h3>Data</h3>
 							<p>COURSES</p>
 							<p>Data Science, Big Data, SQL, Data Visualization</p>
 						</div>
 					</article>
+
 					<article>
-						<figure>
+						<picture>
 							<img
 								src="assets/images/course-business.jpg"
 								alt="Business course"
 							/>
-						</figure>
+						</picture>
 						<div class="course-content">
 							<h3>Business</h3>
 							<p>COURSES</p>
 							<p>Product Development, Business Development, Startup</p>
 						</div>
 					</article>
+
 					<article>
-						<figure>
+						<picture>
 							<img
 								src="assets/images/course-marketing.jpg"
 								alt="Marketing course"
 							/>
-						</figure>
+						</picture>
 						<div class="course-content">
 							<h3>Marketing</h3>
 							<p>COURSES</p>
@@ -244,21 +254,22 @@
 
 					<div class="thesis-side">
 						<article>
-							<figure>
+							<picture>
 								<img src="assets/images/thesis-fisma.jpg" alt="Fisma" />
-							</figure>
+							</picture>
 							<div class="thesis-side-content">
 								<h3>Fisma: Design and Prototype</h3>
 								<p>Designer showcase of new prototype product</p>
 							</div>
 						</article>
+
 						<article>
-							<figure>
+							<picture>
 								<img
 									src="assets/images/thesis-now-and-then.jpg"
 									alt="Now and then"
 								/>
-							</figure>
+							</picture>
 							<div class="thesis-side-content">
 								<h3>Now and then</h3>
 								<p>Research study about New York</p>
@@ -272,8 +283,8 @@
 		<footer>
 			<p>&copy; 2016 Colmar Academy. All rights reserved</p>
 			<div>
-				<p>Term</p>
-				<p>Privacy</p>
+				<a href="#">Terms</a>
+				<a href="#">Privacy</a>
 			</div>
 		</footer>
 	</body>
