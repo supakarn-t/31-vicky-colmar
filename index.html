@@ -4,14 +4,38 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>31-vicky-colmar</title>
 	</head>
 	<body>
 		<header>
 			<a href="#" class="logo">
-				<figure class="logo-img">
-					<img src="assets/images/ic-logo.svg" alt="Logo" />
-				</figure>
+				<div class="logo-img">
+					<img src="assets/images/ic-logo.svg" alt="Logo icon" class="icon" />
+
+					<img
+						src="assets/images/ic-on-campus.svg"
+						alt="On campus icon"
+						class="icon mobile"
+					/>
+
+					<img
+						src="assets/images/ic-online.svg"
+						alt="Online icon"
+						class="icon mobile"
+					/>
+
+					<img
+						src="assets/images/ic-login.svg"
+						alt="Log in icon"
+						class="icon mobile"
+					/>
+				</div>
 				<p class="logo-text text1">COLMAR</p>
 				<p class="logo-text text2">ACADEMY</p>
 			</a>
@@ -62,6 +86,12 @@
 							<img
 								src="assets/images/information-orientation.jpg"
 								alt="Orientation date"
+								class="desktop"
+							/>
+							<img
+								src="assets/images/information-orientation-mobile.jpg"
+								alt="Orientation date"
+								class="mobile"
 							/>
 						</figure>
 						<div class="info-side-content">
@@ -72,7 +102,16 @@
 					</article>
 					<article id="info-article2">
 						<figure>
-							<img src="assets/images/information-campus.jpg" alt="Campus" />
+							<img
+								src="assets/images/information-campus.jpg"
+								alt="Campus"
+								class="desktop"
+							/>
+							<img
+								src="assets/images/information-campus-mobile.jpg"
+								alt="Campus"
+								class="mobile"
+							/>
 						</figure>
 						<div class="info-side-content">
 							<h3>Our campus</h3>
@@ -85,6 +124,12 @@
 							<img
 								src="assets/images/information-guest-lecture.jpg"
 								alt="Guest Lecture"
+								class="desktop"
+							/>
+							<img
+								src="assets/images/information-guest-lecture-mobile.jpg"
+								alt="Guest Lecture"
+								class="mobile"
 							/>
 						</figure>
 						<div class="info-side-content">
@@ -118,74 +163,118 @@
 					<article>
 						<figure>
 							<img
-								src="assets/images/course-software.jpg"
-								alt="Software engineering course"
+								src="assets/images/course-computer-art.jpg"
+								alt="Computer art course"
 							/>
 						</figure>
 						<div class="course-content">
-							<h3>Software engineering</h3>
+							<h3>Computer art</h3>
 							<p>COURSES</p>
-							<p>Web Development, Mobile Development, iOT, APIs</p>
+							<p>
+								Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+								Computer Animation
+							</p>
+						</div>
+					</article>
+					<article>
+						<figure>
+							<img src="assets/images/course-design.jpg" alt="Design course" />
+						</figure>
+						<div class="course-content">
+							<h3>Design</h3>
+							<p>COURSES</p>
+							<p>User Experience Design, User Research, Visual Design</p>
+						</div>
+					</article>
+					<article>
+						<figure>
+							<img src="assets/images/course-data.jpg" alt="Data course" />
+						</figure>
+						<div class="course-content">
+							<h3>Data</h3>
+							<p>COURSES</p>
+							<p>Data Science, Big Data, SQL, Data Visualization</p>
 						</div>
 					</article>
 					<article>
 						<figure>
 							<img
-								src="assets/images/course-software.jpg"
-								alt="Software engineering course"
+								src="assets/images/course-business.jpg"
+								alt="Business course"
 							/>
 						</figure>
 						<div class="course-content">
-							<h3>Software engineering</h3>
+							<h3>Business</h3>
 							<p>COURSES</p>
-							<p>Web Development, Mobile Development, iOT, APIs</p>
+							<p>Product Development, Business Development, Startup</p>
 						</div>
 					</article>
 					<article>
 						<figure>
 							<img
-								src="assets/images/course-software.jpg"
-								alt="Software engineering course"
+								src="assets/images/course-marketing.jpg"
+								alt="Marketing course"
 							/>
 						</figure>
 						<div class="course-content">
-							<h3>Software engineering</h3>
+							<h3>Marketing</h3>
 							<p>COURSES</p>
-							<p>Web Development, Mobile Development, iOT, APIs</p>
-						</div>
-					</article>
-					<article>
-						<figure>
-							<img
-								src="assets/images/course-software.jpg"
-								alt="Software engineering course"
-							/>
-						</figure>
-						<div class="course-content">
-							<h3>Software engineering</h3>
-							<p>COURSES</p>
-							<p>Web Development, Mobile Development, iOT, APIs</p>
-						</div>
-					</article>
-					<article>
-						<figure>
-							<img
-								src="assets/images/course-software.jpg"
-								alt="Software engineering course"
-							/>
-						</figure>
-						<div class="course-content">
-							<h3>Software engineering</h3>
-							<p>COURSES</p>
-							<p>Web Development, Mobile Development, iOT, APIs</p>
+							<p>Analytics, Content Marketing, Mobile Marketing</p>
 						</div>
 					</article>
 				</div>
 			</section>
 
-			<section class="thesis"></section>
+			<section class="thesis">
+				<h2 class="section-head">Thesis exhibit</h2>
+
+				<div class="thesis-all">
+					<article class="thesis-main">
+						<video src="assets/videos/thesis.mp4" controls>
+							Reimagine urban
+						</video>
+						<h3>Reimagine urban</h3>
+						<p>
+							"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+							commodo lectus, nec consequat neque. Sed non accumsan urna.
+							Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+							dolor consequat, tristique ligula"
+						</p>
+					</article>
+
+					<div class="thesis-side">
+						<article>
+							<figure>
+								<img src="assets/images/thesis-fisma.jpg" alt="Fisma" />
+							</figure>
+							<div class="thesis-side-content">
+								<h3>Fisma: Design and Prototype</h3>
+								<p>Designer showcase of new prototype product</p>
+							</div>
+						</article>
+						<article>
+							<figure>
+								<img
+									src="assets/images/thesis-now-and-then.jpg"
+									alt="Now and then"
+								/>
+							</figure>
+							<div class="thesis-side-content">
+								<h3>Now and then</h3>
+								<p>Research study about New York</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
 		</main>
 
-		<footer><p>&copy; 2016 Colmar Academy. All rights reserved</p></footer>
+		<footer>
+			<p>&copy; 2016 Colmar Academy. All rights reserved</p>
+			<div>
+				<p>Term</p>
+				<p>Privacy</p>
+			</div>
+		</footer>
 	</body>
 </html>
