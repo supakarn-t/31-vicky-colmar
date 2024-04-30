@@ -14,11 +14,17 @@
 	--darkgray: rgb(161, 161, 161);
 	--gray: rgb(121, 121, 121);
 	--dimgray: rgb(74, 74, 74);
+	--blue: rgb(74, 144, 226);
 }
 
 body {
 	font-family: sans-serif;
 	color: var(--dimgray);
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: bold;
 }
 
 ul {
@@ -27,7 +33,6 @@ ul {
 
 a {
 	text-decoration: none;
-	color: var(--dimgray);
 }
 
 img {
@@ -66,6 +71,121 @@ header {
 	.nav-bar {
 		display: flex;
 		gap: 16px;
+	}
+
+	a {
+		color: var(--dimgray);
+	}
+}
+
+.hero {
+	display: flex;
+	background-color: var(--lightgray);
+
+	.hero-first {
+		width: 60%;
+		padding: 32px 24px;
+	}
+
+	.hero-second {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 24px;
+		width: 40%;
+		padding-right: 200px;
+		font-weight: bold;
+
+		button {
+			padding: 8px;
+			background-color: var(--dimgray);
+			color: white;
+			border: 0px;
+		}
+	}
+}
+
+.information {
+	display: flex;
+	background-color: var(--whitesmoke);
+
+	.info-main {
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		padding: 32px 24px;
+		gap: 24px;
+
+		figure {
+			margin-bottom: 8px;
+		}
+	}
+
+	.info-side {
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+		border-left: 1px solid var(--darkwhitesmoke);
+
+		article {
+			display: flex;
+			align-items: center;
+			border: 1px solid var(--darkwhitesmoke);
+
+			&#info-article1 {
+				padding-top: 16px;
+			}
+
+			figure {
+				width: 35%;
+				padding: 16px;
+			}
+
+			.info-side-content {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				width: 65%;
+
+				a {
+					color: var(--blue);
+				}
+			}
+
+			&:hover {
+				background-color: var(--lightgray);
+			}
+		}
+	}
+}
+
+.course {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--darkwhitesmoke);
+
+	.section-head {
+		text-align: center;
+		padding: 32px;
+	}
+
+	.course-all {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 32px;
+		padding: 0px 72px 32px;
+
+		article {
+			width: calc((100% - 64px) / 3);
+			background-color: white;
+
+			.course-content {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				padding: 16px 16px 24px;
+			}
+		}
 	}
 }
 
