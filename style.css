@@ -23,14 +23,19 @@ body {
 	color: var(--gray);
 }
 
-h2,
-h3 {
+h1 {
+	font-size: 3rem;
 	color: var(--dimgray);
 }
 
 h2 {
-	font-size: 50px;
-	font-weight: bold;
+	font-size: 2.5rem;
+	color: var(--dimgray);
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: var(--dimgray);
 }
 
 ul {
@@ -43,9 +48,10 @@ a {
 
 img {
 	width: 100%;
+	object-fit: cover;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 501px) {
 	.desktop {
 		visibility: visible;
 	}
@@ -53,7 +59,7 @@ img {
 		display: none;
 	}
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 	.desktop {
 		display: none;
 	}
@@ -93,14 +99,23 @@ header {
 
 	.nav-bar {
 		display: flex;
-		gap: 16px;
+		a {
+			color: var(--dimgray);
+			padding: 21px 8px;
+
+			&:hover {
+				color: black;
+				background-color: var(--darkwhitesmoke);
+				transition: all 0.3s ease;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+			}
+		}
 	}
 
-	a {
-		color: var(--dimgray);
-	}
-
-	@media (max-width: 480px) {
+	@media (max-width: 500px) {
 		padding: 0px;
 
 		.logo,
@@ -138,7 +153,7 @@ header {
 		justify-content: center;
 		gap: 24px;
 		width: 40%;
-		padding: 24px;
+		padding: 0px 24px;
 		font-weight: bold;
 
 		p {
@@ -165,9 +180,9 @@ header {
 		}
 	}
 
-	@media (max-width: 480px) {
-		display: flex;
+	@media (max-width: 800px) {
 		flex-direction: column;
+		padding: 0px;
 
 		.hero-first {
 			width: 100%;
@@ -210,22 +225,28 @@ header {
 
 		article {
 			display: flex;
-			align-items: center;
+
 			border: 1px solid var(--lightgray);
+			padding: 16px;
 
 			&#info-article1 {
-				padding-top: 16px;
+				padding-top: 32px;
 				border-top: none;
+			}
+
+			&#info-article3 {
+				padding-bottom: 32px;
 			}
 
 			picture {
 				width: 35%;
-				padding: 16px;
+				padding-right: 16px;
 			}
 
 			.info-side-content {
 				display: flex;
 				flex-direction: column;
+				justify-content: center;
 				gap: 8px;
 				width: 65%;
 
@@ -254,8 +275,33 @@ header {
 		}
 	}
 
-	@media (max-width: 480px) {
-		display: flex;
+	@media (max-width: 800px) {
+		flex-direction: column;
+
+		.info-main {
+			width: 100%;
+		}
+
+		.info-side {
+			width: 100%;
+			border: none;
+
+			article {
+				border: none;
+
+				picture {
+					width: 50%;
+				}
+				.info-side-content {
+					width: 50%;
+					padding: 16px;
+					justify-content: flex-start;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 500px) {
 		flex-direction: column;
 
 		.info-main {
@@ -267,7 +313,6 @@ header {
 			border-bottom: 1px solid var(--lightgray);
 
 			article {
-				display: flex;
 				flex-direction: column;
 				padding: 16px 16px 32px;
 				border: none;
@@ -324,7 +369,29 @@ header {
 		}
 	}
 
-	@media (max-width: 480px) {
+	@media (max-width: 800px) {
+		.course-all {
+			flex-direction: column;
+			padding: 0px 32px 32px;
+
+			article {
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+
+				picture,
+				.course-content {
+					width: 50%;
+				}
+
+				img {
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 500px) {
 		background-color: var(--whitesmoke);
 
 		.section-head {
@@ -332,14 +399,11 @@ header {
 		}
 
 		.course-all {
-			display: flex;
-			flex-direction: column;
 			gap: 8px;
 			padding: 0px 16px 32px;
 			border-bottom: 1px solid var(--lightgray);
 
 			article {
-				width: 100%;
 				background-color: var(--lightgray);
 
 				&:hover {
@@ -349,6 +413,9 @@ header {
 					-moz-transition: all 0.3s ease;
 					-ms-transition: all 0.3s ease;
 					-o-transition: all 0.3s ease;
+				}
+				.course-content {
+					width: 100%;
 				}
 
 				picture,
@@ -391,6 +458,7 @@ header {
 
 			article {
 				display: flex;
+				padding: 16px;
 
 				&:hover {
 					background-color: var(--lightgray);
@@ -403,7 +471,7 @@ header {
 
 				picture {
 					width: 35%;
-					padding: 16px;
+					padding-right: 16px;
 				}
 
 				.thesis-side-content {
@@ -416,7 +484,33 @@ header {
 		}
 	}
 
-	@media (max-width: 480px) {
+	@media (max-width: 800px) {
+		.thesis-all {
+			flex-direction: column;
+
+			.thesis-main {
+				width: 100%;
+			}
+
+			.thesis-side {
+				width: 100%;
+
+				article {
+					picture {
+						width: 50%;
+					}
+					.thesis-side-content {
+						width: 50%;
+						display: flex;
+						justify-content: flex-start;
+						padding: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 500px) {
 		.section-head {
 			padding: 32px 0px 16px;
 		}
@@ -457,7 +551,7 @@ footer {
 		}
 	}
 
-	@media (max-width: 480px) {
+	@media (max-width: 500px) {
 		padding: 16px;
 		border: none;
 
